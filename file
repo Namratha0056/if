@@ -1,0 +1,29 @@
+#!\bin\bash
+echo " enter the choice "
+read choice
+case $choice in
+	a)echo "enter the 2 number"
+	read a b
+	add=`expr $a + $b`
+	echo "the addition of 2 number is $add"
+	;;
+	b)echo "enter the 2 number"
+        read a b
+        sub=`$a - $b`
+         echo "the subtraction of 2 number is $sub"
+	 ;;
+c)echo "enter the 2 number"
+        read a b
+	mult=`$a \* $b`
+	echo "the multiplication of 2 number is $mult"
+	;;
+
+d)echo "enter the 2 number"
+        read a b
+div=`$a \/ $b`
+echo "the division of 2 number is $div"
+;;
+*)echo "enter a valid choice"
+	;;
+esac
+

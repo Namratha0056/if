@@ -1,5 +1,4 @@
 #!\bin\bash
-
 read name
 if [ -f $name ]
 then
@@ -9,3 +8,5 @@ then
 echo "it is a directory"
 else
 echo "it is either a directory nor file"
+fi
+
